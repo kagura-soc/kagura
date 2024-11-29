@@ -1,14 +1,7 @@
 import os
 
 from piccolo.conf.apps import AppConfig
-from models import (
-    KFollows, 
-    KEmoji, 
-    KHost, 
-    KNote, 
-    KReaction, 
-    KUser,
-)
+import models
 
 
 CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
@@ -20,7 +13,7 @@ APP_CONFIG = AppConfig(
         CURRENT_DIRECTORY,
         'migrations'
     ),
-    table_classes=[KFollows, KEmoji, KHost, KNote, KReaction, KUser],
+    table_classes=models.__all__,
     migration_dependencies=[],
     commands=[]
 )
