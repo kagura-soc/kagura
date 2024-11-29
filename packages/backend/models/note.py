@@ -6,7 +6,7 @@ class KNote(Table):
     user = ForeignKey("KUser", null=False)
     
     cw = Varchar(length=100)
-    content = Text()
+    content = Varchar(length=3000)
     created_at = Text()
 
     media = ForeignKey("Media", null=True)
