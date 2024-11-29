@@ -1,7 +1,7 @@
 from piccolo.conf.apps import AppRegistry
 try:
     from psqlpy_piccolo import PSQLPyEngine
-except ModuleNotFoundError as e:
+except ModuleNotFoundError:
     from piccolo.engine.postgres import PostgresEngine
     PSQLPyEngine = None
 
