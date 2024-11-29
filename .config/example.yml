@@ -1,0 +1,13 @@
+db:
+  host: 127.0.0.1
+  port: 5432
+  user: kagura-example
+  password: kagura-example-password
+  dbname: kagura-example-database
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  user: kagura-example
+  password: kagura-example-password
+  db: 0

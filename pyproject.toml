@@ -13,6 +13,7 @@ dependencies = [
     "taskiq>=0.11.7", 
     "piccolo>=1.22.0", 
     "psqlpy-piccolo>=0.1.7", 
+    "omegaconf>=2.3.0", 
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -27,3 +28,4 @@ install = "python scripts/install.py"
 start = "python packages/backend/server.py"
 build = "cd packages/frontend && npm run build"
 dev = "python scripts/dev.py"
+"piccolo:migrate".shell = "cd packages/backend && piccolo migrations new kagura --auto"
