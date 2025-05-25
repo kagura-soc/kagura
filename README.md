@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> Kagura migrated to [fedi-libs](https://github.com/fedi-libs) organization!
+> 
+> This Repository Will Archived.
+
 # Kagura
 Extensible ActivityPub server.
 
